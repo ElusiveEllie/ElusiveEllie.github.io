@@ -1,0 +1,36 @@
+body {
+    background-color: #CBD3F5;
+}
+
+* {
+    font-family: Garamond, serif;
+}
+
+.tag {
+    font-family: 'Courier New', Courier, monospace
+}
+
+table {
+    border: 3px solid #B1ADDE;
+}
+
+td { 
+    border-bottom: 3px solid #B1ADDE;
+    background-color: #C3EBFA;
+}
+
+.ignore {
+    border-bottom: 0px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+span {
+    background-color: #D7C3FA;
+  }
+  
+  thead td {
+    background-color: #ADC3DE;
+  }
