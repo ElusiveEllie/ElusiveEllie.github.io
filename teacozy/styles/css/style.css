@@ -18,6 +18,7 @@ header {
     align-items: center;
     left: 0;
     right: 0;
+    top: 0;
     z-index: 1;
 }
 
@@ -68,7 +69,7 @@ h4 {
 
 .banner {
     position: relative;
-    top: 70px;
+    margin: 70px;
 }
 
 .content {
