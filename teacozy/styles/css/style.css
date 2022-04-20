@@ -42,11 +42,55 @@ div.mission {
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-div.body {
-    position: relative;
-    top: 70px;
+.container {
     display: flex;
     justify-content: center;
+}
+
+.mission div {
+    align-content: center;
+    width: 1200px;
+}
+
+h2 {
+    font-size: 26px;
+    margin: 10px;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.banner {
+    position: relative;
+    top: 70px;
+}
+
+.content {
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+.monthly-tea, 
+.products {
+    width: 1000px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sample {
+    height: 200px;
+    width: 300px;
+    margin: 10px 15px;
 }
