@@ -1,36 +1,37 @@
 body {
-    background-color: #CBD3F5;
+  background-color: #cbd3f5;
 }
 
 * {
-    font-family: Garamond, serif;
+  font-family: Garamond, serif;
 }
 
 .tag {
-    font-family: 'Courier New', Courier, monospace
+  font-family: "Courier New", Courier, monospace;
 }
 
 table {
-    border: 3px solid #B1ADDE;
+  border: 3px solid #b1adde;
 }
 
-td { 
-    border-bottom: 3px solid #B1ADDE;
-    background-color: #C3EBFA;
+td {
+  border-bottom: 3px solid #b1adde;
+  background-color: #c3ebfa;
 }
 
 .ignore {
-    border-bottom: 0px;
+  border-bottom: 0px;
 }
 
-h1, h2 {
-    text-align: center;
+h1,
+h2 {
+  text-align: center;
 }
 
 span {
-    background-color: #D7C3FA;
-  }
-  
-  thead td {
-    background-color: #ADC3DE;
-  }
+  background-color: #d7c3fa;
+}
+
+thead td {
+  background-color: #adc3de;
+}
