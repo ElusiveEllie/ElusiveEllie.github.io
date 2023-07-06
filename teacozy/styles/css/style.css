@@ -1,162 +1,162 @@
 * {
-    font-family: Helvetica;
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
-    opacity: 0.9;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    height: 69px;
-    border-bottom: 1px solid seashell;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 img.logo {
-    height: 50px;
-    margin: 10px;
-    display: inline-block;
+  height: 50px;
+  margin: 10px;
+  display: inline-block;
 }
 
 div.menu {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 div a.menu-item {
-    margin: 15px;
+  margin: 15px;
 }
 
 div.mission {
-    height: 700px;
-    width: 1200px;
-    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 700px;
+  width: 1200px;
+  background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .mission div {
-    align-content: center;
-    width: 1200px;
+  align-content: center;
+  width: 1200px;
 }
 
 h2 {
-    font-size: 26px;
-    margin: 10px;
+  font-size: 26px;
+  margin: 10px;
 }
 
 h4 {
-    font-size: 18px;
-    margin: 5px;
+  font-size: 18px;
+  margin: 5px;
 }
 
 .banner {
-    position: relative;
-    margin: 70px;
+  position: relative;
+  margin: 70px;
 }
 
 .content {
-    margin-top: 85px;
-    display: flex;
-    justify-content: center;
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
 }
 
-.monthly-tea, 
+.monthly-tea,
 .products {
-    width: 1000px;
+  width: 1000px;
 }
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .sample {
-    height: 200px;
-    width: 300px;
-    margin: 10px 15px;
+  height: 200px;
+  width: 300px;
+  margin: 10px 15px;
 }
 
 .locations {
-    height: 500px;
-    width: 1200px;
-    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg);
-    display: flex;
-    justify-content: space-around;
-    position: relative;
+  height: 500px;
+  width: 1200px;
+  background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg);
+  display: flex;
+  justify-content: space-around;
+  position: relative;
 }
 
 #locations {
-    position: relative;
-    margin-top: 70px;
+  position: relative;
+  margin-top: 70px;
 }
 
 .locations h2 {
-    background-color: rgba(0, 0, 0, 0);
-    margin-bottom: 0;
-    position: absolute;
-    margin-top: 60px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 0;
+  position: absolute;
+  margin-top: 60px;
 }
 
 .address-blocks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0)
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .addresses {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0);
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
 }
 
 .address {
-    height: 300px;
-    width: 300px;
-    margin: 15px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    opacity: 1;
+  height: 300px;
+  width: 300px;
+  margin: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
 }
 
-.addresses h3, 
+.addresses h3,
 .address p {
-    flex-basis: 300px;
+  flex-basis: 300px;
 }
 
 .contact {
-    height: 200px;
-    flex-direction: column;
-    justify-content: space-around;
+  height: 200px;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 footer p {
-    margin: 20px;
-    text-align: left;
+  margin: 20px;
+  text-align: left;
 }
