@@ -1,16 +1,11 @@
+/* Setting some defaults for the page */
 * {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #f8f4e3;
-  color: #634b66;
-  margin: auto;
-  width: 1000px;
-}
-
+/* Header formatting for name */
 header {
   background-color: #634b66;
   color: #f8f4e3;
@@ -18,12 +13,28 @@ header {
   margin-bottom: 20px;
 }
 
-main div {
+/* Formatting for body of page, keeping width to a maximum so text isn't too spread out*/
+body {
+  background-color: #f8f4e3;
+  color: #634b66;
+  margin: auto;
+  width: 800px;
+}
+
+/* Setting formatting for images and their descriptions */
+.image {
   width: 500px;
   margin: auto;
   text-align: center;
 }
 
+.image .subtext {
+  border-top: solid 1px #634b66;
+  padding-top: 3px;
+  margin-top: 2px;
+}
+
+/* Font formatting for headers */
 h1 {
   font-size: 50px;
 }
@@ -43,13 +54,21 @@ h3 {
   font-family: Garamond, serif;
 }
 
+/* Formatting for smaller text */
 .subtext {
   font-size: 10px;
-  padding-top: 3px;
-  margin-top: 2px;
-  border-top: solid 1px #634b66;
 }
 
+/* Footer design */
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #307473;
+  color: #f8f4e3;
+  text-align: center;
+}
+
+/* Colorations for different link pseudo-classes */
 a:link {
   color: #307473;
 }
