@@ -1,6 +1,6 @@
 # HTML & CSS Practice Site
 
-This is just a place to practice HTML and CSS.
+This is just a place to practice HTML and CSS.   
 Some old projects are contained within, and are not very pretty.
 
 ## Link to Github
