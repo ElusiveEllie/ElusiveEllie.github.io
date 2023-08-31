@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>HTML Email Form</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Submit your message:</legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input id="name" name="name" type="text" required />
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="text"
+                            required
+                            placeholder="youremail@email.com"
+                        />
+                    </div>
+                    <div>
+                        <label for="form-message">Your message:</label>
+                        <textarea
+                            id="form-message"
+                            name="message"
+                            required
+                            maxlength="2000"
+                            placeholder="Please enter your message here."
+                        ></textarea>
+                    </div>
+                    <div>
+                        <label for="anti-spam"
+                            >To prove you're not a robot, please select the
+                            cubed root of 27.</label
+                        >
+                        <select name="anti-spam" id="anti-spam" size="1">
+                            <option value="9">9</option>
+                            <option value="3">3</option>
+                            <option value="19683">19,683</option>
+                            <option value="unknown">
+                                I don't know what this means.
+                            </option>
+                        </select>
+                    </div>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
