@@ -1,0 +1,66 @@
+/* Setting some defaults for the page */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Header formatting for name */
+header {
+    display: flex;
+    background-color: #0a210f;
+    color: #8be8cb;
+    height: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Formatting for body of page, keeping width to a maximum so text isn't too spread out*/
+body {
+    background-color: #008080;
+    color: #8be8cb;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Font formatting for headers */
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    color: white;
+}
+
+a,
+h3 {
+    font-size: 80px;
+}
+
+h1,
+h2,
+h3,
+a {
+    text-align: center;
+    font-family: Garamond, serif;
+}
+
+.color-0 {
+    color: #8be8cb;
+}
+
+.color-1 {
+    color: #9c7a97;
+}
+
+.color-2 {
+    color: #4c191b;
+}
+
+.color-3 {
+    color: #0a210f;
+}
