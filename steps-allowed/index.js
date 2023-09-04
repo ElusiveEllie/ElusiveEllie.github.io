@@ -55,6 +55,7 @@ const main = () => {
     <h3>${stepsAllowed} steps!</h3>
     `;
     const h3 = document.querySelector("h3");
+    console.log("Made you look");
     rotateColors(h3);
 };
 
