@@ -26,6 +26,12 @@ body {
     justify-content: center;
 }
 
+div {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
 /* Font formatting for headers */
 h1 {
     font-size: 50px;

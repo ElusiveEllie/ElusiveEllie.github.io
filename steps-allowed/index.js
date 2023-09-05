@@ -18,6 +18,13 @@ function rotateColors(h3Element) {
     for (let i = 0; i < text.length; i++) {
         const color = i % 4;
         const anchor = document.createElement('a');
+        if (stepsAllowed.toString().length === 4) {
+            anchor.style.fontSize = "75px";
+        } else if (stepsAllowed.toString().length === 5) {
+            anchor.style.fontSize = "65px";
+        } else if (stepsAllowed.toString().length === 6) {
+            anchor.style.fontSize = "60px";
+        }
         anchor.className = `color-${color}`;
         anchor.dataset.color = color;
         anchor.textContent = text[i]
@@ -38,7 +45,9 @@ const main = () => {
     const main = document.querySelector("main");
     main.innerHTML = `
     <h2>You are allowed:</h2>
+    <div>
     <h3>${stepsAllowed} steps!</h3>
+    </div>
     `;
     const h3 = document.querySelector("h3");
     console.log("Made you look");
