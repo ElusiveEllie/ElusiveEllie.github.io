@@ -4,48 +4,34 @@ const currentDate = new Date().setHours(0, 0, 0, 0);
 
 const diffDays = Math.round(Math.abs((startDate - currentDate) / oneDay));
 
-const stepsAllowed = 150 + diffDays * 100;
+let stepsAllowed = 150 + diffDays * 100;
+if (currentDate < startDate) {
+    stepsAllowed = 150;
+}
 
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
-async function rotateColors(h3Element) {
+function rotateColors(h3Element) {
     const text = h3Element.innerText;
+    const anchors = [];
     h3Element.innerHTML = "";
     for (let i = 0; i < text.length; i++) {
-        h3Element.innerHTML =
-            h3Element.innerHTML +
-            `<a class="color-${(i + 3) % 4}">${text[i]}</a>`;
+        const color = i % 4;
+        const anchor = document.createElement('a');
+        anchor.className = `color-${color}`;
+        anchor.dataset.color = color;
+        anchor.textContent = text[i]
+        h3Element.appendChild(anchor);
+        anchors.push(anchor);
     }
-    while (true) {
-        await delay(500);
-        h3Element.innerHTML = "";
-        for (let i = 0; i < text.length; i++) {
-            h3Element.innerHTML =
-                h3Element.innerHTML +
-                `<a class="color-${i % 4}">${text[i]}</a>`;
+    
+    setInterval(() => {
+        for (const anchor of anchors) {
+            const newColor = (Number.parseInt(anchor.dataset.color) + 1) % 4;
+            anchor.className = `color-${newColor}`;
+            anchor.dataset.color = newColor;
         }
-        await delay(500);
-        h3Element.innerHTML = "";
-        for (let i = 0; i < text.length; i++) {
-            h3Element.innerHTML =
-                h3Element.innerHTML +
-                `<a class="color-${(i + 1) % 4}">${text[i]}</a>`;
-        }
-        await delay(500);
-        h3Element.innerHTML = "";
-        for (let i = 0; i < text.length; i++) {
-            h3Element.innerHTML =
-                h3Element.innerHTML +
-                `<a class="color-${(i + 2) % 4}">${text[i]}</a>`;
-        }
-        await delay(500);
-        h3Element.innerHTML = "";
-        for (let i = 0; i < text.length; i++) {
-            h3Element.innerHTML =
-                h3Element.innerHTML +
-                `<a class="color-${(i + 3) % 4}">${text[i]}</a>`;
-        }
-    }
+    }, 500);
 }
 
 const main = () => {
