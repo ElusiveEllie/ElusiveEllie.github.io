@@ -45,9 +45,7 @@ const main = () => {
     const main = document.querySelector("main");
     main.innerHTML = `
     <h2>You are allowed:</h2>
-    <div>
     <h3>${stepsAllowed} steps!</h3>
-    </div>
     `;
     const h3 = document.querySelector("h3");
     console.log("Made you look");
