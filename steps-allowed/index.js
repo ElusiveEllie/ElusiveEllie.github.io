@@ -1,5 +1,5 @@
 const oneDay = 24 * 60 * 60 * 1000;
-const startDate = new Date(2023, 8, 5);
+const startDate = new Date(2025, 7, 6);
 const currentDate = new Date().setHours(0, 0, 0, 0);
 
 const diffDays = Math.round(Math.abs((startDate - currentDate) / oneDay));
